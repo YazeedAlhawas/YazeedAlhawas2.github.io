@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="Styles.css">
+        <div id="navbar">
+            <a class="home" href="index.html">الرئيسية</a>
+            <a class="Services" href="Services.html">خدماتنا</a>
+            <a class="Subscribe" href="Subscribe.html">اشترك معنا</a>
+            <a calss="Clients" href="Clients.html">عملاؤنا</a>
+            <a class="Contact" href="Contact.html">تواصل معنا</a>
+        </div>
+
+    </head>
+    <body>
+        <div class="container">
+            <img src="/img/formback1.jpg" style="width: 100%;" class="formimg">
+        <div class="center">
+            <h1>املأ النموذج</h1>
+
+            <form id="form1" method="post" action="/sendEmail.php">
+                <label for="Fname" class="labels"> الاسم الكريم</label><br/><br/>
+                <input type="text" name="name" class="inputf" id="name" placeholder="الاسم" required><br/><br/><br/>
+
+                <label for="email"  class="labels" > البريد الالكتروني</label><br/><br/>
+                <input type="email" name="email" class="inputf" id="email" required placeholder="youremail@domain.com" ><br/><br/><br/>
+
+                <label for="phone"  class="labels">  رقم الهاتف</label><br/><br/>
+                <input type="tel" name="phone" class="inputf" placeholder="05x-xxx-xxxx" id="phone" required pattern="(009665|9665|\+9665|05|5)(5|0|3|6|4|9|1|8|7)([0-9]{7})" maxlength="10"><br/><br/><br/>
+
+
+
+                <label for="service"  class="labels" style="font-size: 23px;">نوع الخدمة</label><br/><br/> 
+             
+
+                <label for="service1"  class="labels"style="font-size: 20px;">مسك دفاتر</label>
+                <input type="checkbox" name="checkBox[]" value="bookkeeping" class="myCheckBox" id="checkBox1" required>
+
+                <label for="service2"  class="labels" style="font-size: 20px;">استشارات محاسبية ومالية</label>
+                <input type="checkbox" name="checkBox[]" value="consultation" class="myCheckBox" id="checkBox2" required>
+
+                <label for="service3" class="labels" required style="font-size: 20px; ">خدمات ضريبة القيمة المضافة</label>
+                <input type="checkbox" name="checkBox[]" value="tax"  class="myCheckBox" id="checkBox3"required>
+                <br/><br/>
+                
+
+                <label for="message" style="font-size: 20px; padding-bottom:50px;" class="labels5"> : نشاطك التجاري    </label>
+                <br/>
+                <textarea name="message" form="form1" style="height: 150px; width:300px; " placeholder="" class=""></textarea>
+
+                <input type="submit" name="submitButton" class="button" id="submit" onclick="validate();">
+            </form>
+        </div>
+        </div>
+
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script src="/script.js"></script>
+    </body>
+</html>

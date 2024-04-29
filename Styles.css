@@ -1,0 +1,262 @@
+@font-face {
+    font-family: 'Rubik';
+    src: url('/Fonts/Rubik Font.ttf');
+}
+@font-face {
+    font-family: 'RubikBold';
+    src: url('/Fonts/Rubik-BoldItalic.ttf');
+}
+@font-face {
+    font-family: 'ns5';
+    src: url('/Fonts/ns5.otf');
+}
+@font-face {
+    font-family: 'ns5bold';
+    src: url(/Fonts/ns5bold.otf);
+}
+
+/* Navegation Bar Css*/
+#navbar{
+    overflow: hidden;
+    background-color: #363636;
+
+}
+#navbar a {
+    float: right;
+    color: #f8f8f8;
+    text-align: center;
+    padding: 14px 16px;
+    display: block;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: ns5;
+    width: 200px;
+    padding-right: 5px;
+    padding-left: 5px;
+    transition-duration: .4s;
+
+  }
+  #navbar a:hover {
+    background-color: rgb(246, 134, 22);
+    color: white;
+    width: 200px;
+    padding-right: 15px;
+    padding-left: 15px;
+    opacity: 1.0;
+    transition-duration: .4s;
+
+  }
+  .imgtst{
+    background-size: cover;
+    height: 800px;
+    width: 100%;
+    filter: blur(2px) brightness(.85);  
+  }
+  .imgt{
+
+   max-height:0px;
+  }
+  .Intro{
+    color: #f8f8f8;
+    float: right;
+    overflow: hidden;
+    font-family: ns5bold;
+    text-align: right;
+    padding-top: 20px;
+    padding-right: 30px;
+    padding-bottom: 0%;
+    position: relative;
+    background-image: linear-gradient(to right, rgb(45, 45, 45,0), rgb(45,45,45,1));
+    height: 780px;
+
+  }
+  p{
+    width: 500px;
+    text-align: right;
+    float: right;
+    padding-right: 30px;
+    position: relative;
+    margin: 0;
+
+
+  }
+ .h1{
+    width: 500px;
+    text-align: right;
+    float: right;
+    padding-right: 30px;
+    position: relative;
+    text-shadow: 2px 2px 60px #ff8000;
+
+ }
+
+  .introbutton{
+    height: 800px;
+  }
+  .button1{
+    position: relative;
+    top:300px;
+    left: 1000px;
+    background-color: rgb(255, 243, 243);
+    border-radius: 24px;
+    border-style: hidden;
+    padding: 16px 90px;
+    font-size: 20px;
+    font-family: ns5bold;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    text-decoration: none;
+
+
+  }
+  .button1:hover{
+    box-shadow: 0 12px 20px 0 rgba(246, 134, 22, 0.24),0 17px 50px 0 rgba(246, 134, 22, 0.19);
+    font-size: 21px;
+  
+  }
+  .sndpart{
+    margin-top: 0;
+    height: 500px;
+    border-style: solid;
+    border-color: black;
+    border-width: 10;
+  }
+    .sndh1{
+      font-family: ns5bold;
+      text-align: right;
+      padding-right: 30px;
+    }
+ 
+  body{
+    margin: 0px;
+    overflow-x: hidden;
+  }
+/*-------------------------------Subscribe Form CSS---------------*/
+
+.formimg{
+    height: 850px;
+    width: 100%;
+    filter: blur(3px) brightness(.75); 
+    text-align: center;
+    position: relative;
+}
+.center{
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  background-color: #222222;
+  height: 800px;
+  width: 600px;
+  box-shadow: 0 12px 20px 0 rgba(255, 255, 255, 0),0 17px 50px 0 rgba(255, 255, 255, 1);
+  border-radius: 24px;
+  border-style: hidden;
+  color: #f8f8f8;
+  text-align: right;
+  padding-right: 10px;
+
+}
+.container{
+  position: relative;
+}
+.container form{
+  font-family: ns5;
+
+}
+.inputf{
+  background-color: rgb(74, 74, 74);
+
+  text-align: right;
+
+  left: 50px;
+
+  border: 0;
+  border-right: 2px solid grey;
+  border-bottom: 2px solid grey;
+  border-radius: 6px;
+
+  color: #ffffff;
+  font-size: 20px;
+  transition-duration: .4s; 
+  
+  width: 500px;
+  height: 40px;
+}
+.inputf:hover{
+  box-shadow: 0 12px 20px 0 rgba(255, 255, 255, 0),0 10px 50px 0 rgb(255, 255, 255);
+  transition-duration: .4s;
+
+
+}
+.inputf:focus{
+  box-shadow: 0 12px 20px 0 rgba(246, 134, 22, 0),0 10px 50px 0 rgba(246, 134, 22, 1);
+  transition-duration: .6s;
+}  
+.inputf:valid{
+  box-shadow: 0 12px 20px 0 rgba(0, 255, 68, 0),0 10px 50px 0 rgb(0, 255, 68);
+  transition-duration: .6s;
+}
+
+textarea:hover{
+  box-shadow: 0 12px 20px 0 rgba(160, 160, 160, 0),0 10px 50px 0 rgb(255, 255, 255);
+  transition-duration: .4s;
+
+}
+textarea:focus{
+  box-shadow: 0 12px 20px 0 rgba(160, 160, 160, 0),0 10px 50px 0 rgb(255, 255, 255);
+  transition-duration: .4s;
+}
+
+
+
+.labels{
+  position: relative;
+  text-align: right ;
+  margin: 0;
+}
+textarea{
+  position: absolute;
+
+  bottom: 50px ;
+  left: 150px;
+
+  text-align: right;
+  font-size: 20px;
+  resize: none;
+
+  background-color: rgb(68, 68, 68);
+  border: 1;
+  border-right: 2px solid grey;
+  border-bottom: 2px solid grey;
+  border-radius: 20px;
+  color: #f8f8f8;
+  transition-duration: .4s;
+  
+}
+.labels5{
+  position: absolute;
+  bottom: 165px;
+  left: 345px;
+
+}
+.myCheckBox{
+  transition-duration:.4s ;
+}
+.myCheckBox:hover{
+  box-shadow: 0 12px 20px 0 rgba(160, 160, 160, 0),0 5px 30px 0 rgb(128, 128, 128);
+  transition-duration:.4s;
+}
+.myCheckBox:focus{
+  box-shadow: 0 12px 20px 0 rgba(160, 160, 160, 0),0 10px 50px 0 rgb(255, 255, 255);
+  transition-duration: .4s;
+}
+.myCheckBox::selection{
+  box-shadow: 0 12px 20px 0 rgba(160, 160, 160, 0),0 10px 50px 0 rgb(0, 255, 68);
+  transition-duration: .4s; 
+}
+
+
+
+
+
+  
+  
